@@ -1,0 +1,33 @@
+# Terraform .tfstate files
+*.tfstate
+*.tfstate.*.backup
+
+# Terraform .terraform directory
+.terraform/
+
+# Crash log files
+crash.log
+
+# .terraform.lock.hcl (optional, but generally recommended for collaborative projects)
+# If you want to track specific provider versions for consistency across team members,
+# you might include this. Otherwise, ignore it to allow each team member to resolve versions independently.
+# .terraform.lock.hcl
+
+# Local override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# .terraformrc files
+.terraformrc
+
+# Sensitive variable definition files
+*.tfvars
+*.tfvars.json
+
+# VS Code specific files (optional)
+.vscode/
+
+# Ignore a specific file, e.g., for credentials
+credentials.json
