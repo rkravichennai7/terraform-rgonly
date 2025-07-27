@@ -5,7 +5,13 @@ terraform {
       version = "4.37.0"
     }
   }
-}
+  backend "azurerm" {
+    resource_group_name  = "ravi_demo"
+    storage_account_name = "ravistorage3" # अपना स्टोरेज अकाउंट नाम दें
+    container_name       = "ravicontainer"
+    key                  = "terraform.tfstate"
+  }
+  }
 
 provider "azurerm" {
   features {}
